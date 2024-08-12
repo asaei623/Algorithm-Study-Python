@@ -33,8 +33,10 @@ def bfs(start):
 
 # 입력
 m, n, h = map(int, input().split())
-box = [list(map(int, input().split())) for _ in range(n)]
-boxes = [[list(row) for row in box] for _ in range(h)] # 깊은 복사를 해야 각 행들이 독립적으로 수정된다.
+boxes = []
+for _ in range(h):
+    box = [list(map(int, input().split())) for _ in range(n)]
+    boxes.append(box)
 
 # 변수들
 dx = [1, -1, 0, 0, 0, 0]
