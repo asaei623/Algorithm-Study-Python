@@ -6,11 +6,13 @@ def bfs(n, k):
 
     while(q):
         curx = q.popleft()
+
+        if curx == k:
+            return ans[curx]
+            
         for nx in (curx - 1, curx + 1, curx * 2): # 곱셈이 있으므로 기존 방식(curx + dx[i])은 쓸 수 없다.
             if nx not in ans and 0 <= nx <= 100000: # 방문 여부 확인 and 범위 확인
                 ans[nx] = ans[curx] + 1
-                if nx == k:
-                    return ans[nx]
                 q.append(nx)
     
     
