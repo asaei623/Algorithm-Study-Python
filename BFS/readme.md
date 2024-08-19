@@ -2,7 +2,7 @@
 
 <br>
 
-📜 [개념정리](https://velog.io/@asaei623/series/Algorithm-BFSDFS)
+📜 [개념정리](https://asaei623.github.io/categories1/BFS-concepts/)
 
 📜 목록
 
